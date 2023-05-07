@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- jquery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+
+    <!-- navBAR -->
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          class="logoimg"
+          src="https://khairalbaddah.com/wp-content/uploads/2022/11/cropped-512-5-2.png"
+          alt=""
+        />
+      </div>
+      <ul class="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/signup">Sign in</a></li>
+      </ul>
+      <div class="icons">
+        <i class="fa-solid fa-bars" id="bars"></i>
+      </div>
+    </nav>
+    <!-- /navBAR -->
+
+
+    <div class="heading">
+        <h1>OUR SERVICES</h1>
+    </div>
+    <div class="card">
+      <div class="imgbox">
+        <img
+          src="https://www.bilcouk.co.uk/files/2017-11/udf-50rem.jpg?3e32886397"
+        />
+      </div>
+
+      <div class="content">
+        <h2>SMOKE VENTILATORS</h2>
+        <p>
+            Specialist in installation & maintenance of Smoke Ventilators.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+        <div class="imgbox">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2021/7/ZY/RQ/JF/36830391/stainless-steel-wind-driven-turbo-ventilator-500x500.jpg"
+          />
+        </div>
+  
+        <div class="content">
+          <h2>WIND DRIVEN FANS</h2>
+          <p>
+            Specialist in installation & maintenance of Wind Driven Fans.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgbox">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDqRj361J8AUg8WneHihHc1wE7nXF_cD_WSA&usqp=CAU"
+          />
+        </div>
+  
+        <div class="content">
+          <h2>SOAKER PANEL</h2>
+          <p>
+            Specialist in installation & maintenance of Soaker Panel.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgbox">
+          <img
+            src="https://b2bpurchase.com/wp-content/uploads/2022/04/63-753x418.jpg"
+          />
+        </div>
+  
+        <div class="content">
+          <h2>SKYLIGHTS</h2>
+          <p>
+            Specialist in installation & maintenance of Skylights.
+          </p>
+        </div>
+      </div>
+      
+    <div class="card">
+      <div class="imgbox">
+        <img
+          src="https://www.cetal.com/wp-content/uploads/CETAL_turn-key_power_control_panels.jpg"
+        />
+      </div>
+
+      <div class="content">
+        <h2>CONTROL PANEL</h2>
+        <p>
+            Specialist in installation & maintenance of Control Panel.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgbox">
+        <img
+          src="https://www.process-cooling.com/ext/resources/issues/April2015/BAF/PC0415_Slideshow_BAF_1.jpg?t=1435686625&width=696"
+        />
+      </div>
+
+      <div class="content">
+        <h2>HVLS FANS</h2>
+        <p>
+            Specialist in installation & maintenance of HVLS fans.
+      </div>
+    </div>
+    <script>
+      // NAVBAR
+$('#bars').click(function(){
+    $('.list').slideToggle("slow");
+    if($('#bars').hasClass('fa-solid fa-bars'))
+    $('#bars').removeClass().addClass("fa-solid fa-xmark");
+    else{
+        $('#bars').removeClass().addClass("fa-solid fa-bars");
+    }
+})
+// NAVBAR
+    </script>
+  </body>
+</html>

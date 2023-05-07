@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+
+.chatbot{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 450px;
+    height: 680px;
+}
+
+
+.chat-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline;
+    font-size: 60px;
+}
+
+.bot-area{
+    position: relative;
+    top: 0;
+    width: 390px;
+    height: 585px;
+    background-color:white;
+    border: 3px solid white;
+    box-shadow: 5px 5px 50px black;
+    border-radius: 30px;
+}
+
+.upper-portion{
+    position: absolute;
+    top: 0;
+    color: white;
+    height: 65px;
+    width: 385px;
+    background-color: rgb(87, 199, 230);
+    border-radius: 30px 30px 0px 0px;
+}
+
+.input-area{
+    border-top: 1px solid #bbb;
+    position: absolute;
+    border-radius: 0px 0px 30px 30px;
+    bottom: 0;
+    width: 385px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+}
+
+.input-area input{
+    border: 2px solid white;
+    
+    margin: auto 0px auto 10px;
+    width: 200px;
+    height:30px;
+}
+
+.input-area .icons{
+    display: inline;
+    border-radius: 0px 0px 30px 0px;
+    width: 160px ;
+    position: absolute;
+    background-color: white;
+    align-items: center;
+    height: 58px;
+    right: 0;
+}
+
+.input-area .icons i{
+    font-size: 30px;
+    margin: 15px 10px 15px 20px;
+    cursor: pointer;
+}
+
+.bot-area .upper-portion h1{
+    position: absolute;
+    left: 20px;
+}
+
+.chat-area{
+    position: absolute;
+    top: 65px;
+    width: 385px;
+    overflow: scroll;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-area .botMessage{
+     width: 200px;
+}
+
+.chat-area .botText{
+    margin-top: 20px;
+    background-color:#f1f1f1;
+    font-size: 19px;
+    padding: 5px;
+    border-radius:10px;
+    margin-bottom: 10px;
+}
+
+.chat-area .options{
+    /* position: absolute; */
+    background: white;
+    font-size: 17px;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: 90px;
+    padding: 5px;
+    border:1px solid rgb(129, 207, 234);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.chat-area .userText{
+    position: relative;
+    right: 0;
+    display: flex;
+    
+    background-color:#f1f1f1;
+    font-size: 19px;
+    padding: 5px;
+    border-radius:10px;
+    margin-top: 10px;
+
+    margin-right: 0;
+    /* width: fit-content; */
+    /* max-width: 200px; */
+    width: 200px;
+}
+
+ .timespanbot{
+    position:relative;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 6%;
+    float: right;
+    font-size: 10px;
+    bottom: 0;
+}

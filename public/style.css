@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .navbar */
+
+body{
+  background-color: black;
+}
+.navbar {
+  height: 80px;
+  background-color:#001f3d;
+}
+.logo {
+  display: inline;
+  margin-left: 20px;
+  color: white;
+  font-size: 30px;
+}
+.logoimg {
+  width: 70px;
+}
+.list {
+  margin: 0;
+  list-style: none;
+  float: right;
+}
+.navbar ul li {
+  margin: 0px 40px 0px 40px;
+  display: inline;
+}
+.navbar ul li a {
+  font-size: 28px;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+button a, button a:hover, .know-more a, .know-more a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.know-more a, .know-more a:hover{
+  text-decoration: none;
+  color: blue;
+}
+
+.navbar ul li a:hover {
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 30px;
+}
+.icons {
+  display: none;
+}
+
+/* /.navbarBAR */
+
+/* HEADER */
+
+.typewriter {
+  padding: 30px;
+  color: white;
+}
+
+.typewriter h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 7s steps(18, end), blink-caret 2s step-end infinite;
+  animation-iteration-count: infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* /HEADER */
+
+/* MAIN PAGE BACKGROUND */
+
+.section {
+  position: relative;
+  margin-top: 0;
+  background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-cool-shiny-digital-electrical-banner-poster-background-picture-image_1129233.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.section .info-box {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 500px;
+  height: 400px;
+}
+.info-box .learn-more button {
+  margin: 20px;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 20px;
+  color: white;
+}
+
+/* /MAIN PAGE BACKGROUND  */
+/* why services */
+
+.why-services {
+ 
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  /* align-items: center; */
+  text-align: center;
+}
+.why-services .pic img {
+  width: 150px;
+}
+.why-services .text {
+  font-size: 35px;
+  color: rgb(67, 140, 192);
+}
+
+
+/* PROJECTS DESCRIPTION */
+
+
+.project-names{
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #afafaf;
+  width: 80%;
+  margin: auto;
+  height: 500px;
+  background-image: url(projectCompletion.png);
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
+.project-names .heading{
+  position: absolute;
+  top: 0;
+  padding: 30px;
+  /* background-color: aqua; */
+}
+.project-names .heading h3{
+  font-size: 25px;
+}
+
+.project-names .name-list{
+  padding: 0;
+  position: absolute;
+  top: 100px;
+  background-color: transparent;
+}
+.project-names .name-list ul{
+  
+  font-size: 20px;
+  margin-left: 60px;
+}
+.project-names .name-list ul li span{
+  margin-right: 20px;
+  color: rgb(36, 221, 36);
+}
+
+
+.project-names .bottom-btn{
+  position: absolute;
+  left: 60px;
+  background-color: transparent;
+  padding: 30px;
+  bottom: 0;
+}
+.project-names .bottom-btn button{
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  background-color: hsla(212, 82.0%, 54.3%, 1);
+  border: 2px solid hsla(212, 82.0%, 54.3%, 1);
+  border-radius: 4px;
+}
+.project-names .bottom-btn .know-more{
+  cursor: pointer;
+  color: hsla(212, 82.0%, 54.3%, 1);
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 1200px){
+  .project-names{
+    height: 450px;
+    background-size:250px;
+  }
+  .project-names .heading h3{
+    font-size: 20px;
+  }
+  .project-names .name-list{
+    width: 70%;
+    height: 300px;
+  }
+  .project-names .name-list ul{
+    
+    font-size: 17px;
+    margin-left: 10px;
+  }
+  .project-names .bottom-btn button{
+    font-size: 20px;
+  }
+  .project-names .bottom-btn .know-more{
+    font-size: 17px;
+  }
+} 
+
+
+
+@media only screen and (max-width: 850px){
+    .project-names{
+      height: 500px;
+      background-size:0px;
+    }
+    .project-names .name-list ul{
+      /* height: 300px; */
+      /* width: 40%; */
+      font-size: 10px;
+      margin-left: 10px;
+    }
+    .project-names .bottom-btn button{
+      width: 80%;
+      font-size: 15px;
+    }
+    .project-names .bottom-btn .know-more{
+     
+      font-size: 15px;
+    }
+    .project-names .bottom-btn{
+      padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  /* .navbarBAR */
+  .list {
+    list-style: none;
+    color: white;
+    z-index: 1000;
+
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: black;
+
+    width: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    text-decoration: none;
+    height: 100vh;
+
+    /* for hiding */
+    display: none;
+  }
+  .navbar ul li {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    margin: 50px 0px;
+  }
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar {
+    background-color: rgb(9, 137, 196);
+    padding: 4px;
+    height: 80px;
+    display: flex;
+    /* color: white; */
+  }
+  .logo {
+    margin-left: 20px;
+    font-size: 30px;
+    color: white;
+  }
+  .icons {
+    height: 50px;
+    display: block;
+    padding: 6px;
+    position: absolute;
+    color: white;
+    right: 16px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 2s ease;
+  }
+
+  /* /.navbarBAR */
+  .typewriter h1 {
+    font-size: 38px;
+  }
+
+  .section {
+    height: 450px;
+  }
+
+  .section .info-box {
+    top: 30%;
+    width: 450px;
+  }
+  .why-services {
+    width: 350px;
+    height: 250px;
+  }
+  .why-services .pic img {
+    width: 100px;
+  }
+  .why-services text {
+    font-size: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .typewriter h1 {
+    font-size: 22px;
+  }
+  .section .info-box {
+    width: 300px;
+  }
+  .info-box .learn-more button {
+    font-size: 15px;
+  }
+  .why-services {
+    width: 320px;
+    height: 220px;
+  }
+  .why-services .text {
+    font-size: 20px;
+  }
+}
